@@ -116,6 +116,12 @@
           '<span class="brand"><span class="brand__mark">' + icon('logo') + '</span><span class="brand__name">UrbanBuild<span class="brand__ai"> AI</span></span></span>' +
         '</header>' +
         '<main class="login__center">' +
+          '<aside class="login__guide">' +
+            '<span class="login__guide-badge">For reviewers &amp; testers</span>' +
+            '<h2>Marking or testing the site?</h2>' +
+            '<p>Skip the password — use the <b>&#x201C;Log in as an employee&#x201D;</b> dropdown to open any role instantly: Site Worker, Supervisor, Safety Officer, Project Manager, Logistics or Admin.</p>' +
+            '<span class="login__guide-arrow">Pick a role to start ' + icon('arrow') + '</span>' +
+          '</aside>' +
           '<div class="login__card">' +
             '<div class="authtabs">' +
               '<button class="authtab' + (tab === 'login' ? ' is-active' : '') + '" data-action="auth-tab" data-tab="login">Log in</button>' +

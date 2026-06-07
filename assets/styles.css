@@ -87,7 +87,16 @@ input,select,textarea,button{font-family:inherit;}
 .login__top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:26px 36px;flex-wrap:wrap;}
 .login__eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:600;padding:.45rem .85rem;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);color:rgba(226,232,246,.9);}
 .login__eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(34,211,238,.25);}
-.login__center{position:relative;z-index:2;flex:1;display:grid;place-items:center;padding:14px 28px 44px;}
+.login__center{position:relative;z-index:2;flex:1;display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap;padding:14px 28px 44px;}
+.login__guide{max-width:300px;color:#fff;}
+.login__guide-badge{display:inline-block;font-family:var(--font-d);font-weight:700;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);padding:.36rem .7rem;border-radius:999px;margin-bottom:1.1rem;}
+.login__guide h2{font-size:1.55rem;color:#fff;margin-bottom:.6rem;line-height:1.15;}
+.login__guide p{color:rgba(226,232,246,.72);font-size:1rem;line-height:1.65;}
+.login__guide p b{color:#fff;font-weight:600;}
+.login__guide-arrow{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;font-family:var(--font-d);font-weight:600;font-size:.92rem;color:var(--cyan);}
+.login__guide-arrow .ic{width:18px;height:18px;animation:nudge 1.3s ease-in-out infinite;}
+@keyframes nudge{0%,100%{transform:translateX(0);}50%{transform:translateX(6px);}}
+@media (max-width:900px){.login__guide{max-width:430px;text-align:center;}.login__guide-arrow{display:none;}}
 .login__card{width:100%;max-width:430px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:22px;padding:30px;backdrop-filter:blur(16px);box-shadow:var(--shadow-lg);}
 .login__card h2{font-size:1.6rem;color:#fff;}
 .login__sub{color:rgba(226,232,246,.62);margin:.4rem 0 1.4rem;font-size:.92rem;}
